@@ -1,11 +1,8 @@
 #include "mat.h"
 #include "net.h"
-#include"Dir.hpp"
-#include "motoproc.h"
-#include "mtcnnFeature.h"
 #include<iostream>
 #include<fstream>
-#include <opencv.hpp>
+
 
 
 #include <fstream>
