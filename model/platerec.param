@@ -1,0 +1,8 @@
+7767517
+6 7
+Input            data             0 1 data 0=512 1=1 2=-233
+Input            data2            0 1 indicator 0=1 1=-233 2=-233
+Split            splitncnn_0      1 2 indicator indicator_splitncnn_0 indicator_splitncnn_1
+LSTM             lstm1            2 1 data indicator_splitncnn_1 lstm1 0=128 1=262144
+LSTM             lstm2            2 1 lstm1 indicator_splitncnn_0 lstm2 0=256 1=131072
+InnerProduct     fc1              1 1 lstm2 fc1 0=69 1=1 2=17664
